@@ -1,4 +1,6 @@
 // script.js
+
+
 document.addEventListener('DOMContentLoaded', () => {
     // Navbar toggler animation
     const toggler = document.querySelector('.navbar-toggler');

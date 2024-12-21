@@ -1,8 +1,16 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --fonte01: "Poppins", serif;
+    --fonte02: "Playfair Display", serif;
+    --fonte03: "Kanit", serif;
+    --fonte04: "Merriweather", serif;
+    --fonte05: "Inter", serif;
 
-
+  }
+  
 
 /* styles.css */
 body {
@@ -14,12 +22,8 @@ navbar {
     height: 1rem;
 }
 
-.logo {
-    max-width: 200px;
-    height:150px;
-    width: auto;
-    padding-bottom:20px;
-
+.navbar-brand {
+    font-family: var(--fonte04);
 }
 
 #inicio {
@@ -43,35 +47,75 @@ navbar {
     font-weight: bold;
     color: white;
     text-shadow: 2px 2px 2px black;
+    font-family: var(--fonte01);
 }
+
+
 
 .hero p {
     font-size: 1.2rem;
     margin: 10px;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     text-shadow: 2px 2px 2px black;
     font-weight: bolder;
+    font-family: var(--fonte05);
+}
+
+a.nav-link:hover {
+    color: #0056b3;
+    transform: translateX(5px);
+    transition: transform 0.5s linear;
+}
+
+h5 {
+    font-family: var(--fonte01);
 }
 
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgb(216, 211, 211);
+    
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.433);
 }
 
 #sobre {
     background-color: #343a40;
     color: #fff;
     text-align: center;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
 
 }
 
-p#sobre{
+h2 {
+    font-family: var(--fonte01);
+    font-weight: 600;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+p{
     text-align: justify;
+    font-family: var(--fonte05) ;
+}
+
+
+
+#contato {
+    background-color: #343a40;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+
+}
+
+.contato {
+    color: white;
+    text-align: center;
 }
 
 /* Estilo base do formulário */
@@ -132,22 +176,54 @@ p#sobre{
 footer {
     background-color: #212529;
     color: #fff;
-    text-align: center;
     padding: 1rem 0;
 }
 
+p.footer {
+    text-align: center;
+}
+
+.social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* Espaçamento entre os ícones */
+    }
+
+    .social-icons a {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      border: 2px solid white; /* Moldura da imagem */
+      border-radius: 50%; /* Moldura arredondada */
+      overflow: hidden; /* Garante que a imagem fique dentro do círculo */
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+      border-color: #1d9bf0; /* Altera a cor da borda no hover */
+    }
+
+    .social-icons img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ajusta a imagem dentro da moldura */
+    }
 
 
-.btn {
+
+.btn-form {
     border-radius: 50px;
-    transition: background-color 0.3s ease, color 0.3s ease;
     background-color: #0056b3;
+    height: 40px;
+    width: 365px;
     color: white;
 }
 
-.btn:hover {
+.btn-form:hover {
     background-color: #043468;
     color: #fff;
+    
 
 }
 
