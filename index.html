@@ -1,66 +1,131 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site Responsivo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ares BarberShop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navbar -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#inicio">Ares BarberShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container">
-    <a class="navbar-brand" href="#">Minimalista</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero text-center d-flex flex-column align-items-center justify-content-center bg-light" style="height: 100vh;">
+        <div class="hero.foto">
+            <img src="" alt="">
+        </div>
+        <h1 class="mb-3">Ares BarberShop</h1>
+        <p class="mt-3">Onde Cada Corte Transforma Você em Um Guerreiro e Cada Estilo Faz Você Reinar</p>
+        <a href="#barbeiros" class="btn btn-primary mt-4">Conheça nossos Barbeiros</a>
+    </section>
 
-<!-- Seção Início -->
-<section id="inicio" class="section">
-  <div class="container text-center">
-    <h1 class="fade-in">Bem-vindo ao Layout Minimalista</h1>
-    <p class="fade-in">Este layout é elegante, responsivo e perfeito para seu site.</p>
-    <a href="#sobre" class="btn btn-custom fade-in">Saiba Mais</a>
-  </div>
-</section>
 
-<!-- Seção Sobre -->
-<section id="sobre" class="section">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6 fade-in">
-        <img src="https://via.placeholder.com/600x400" alt="Sobre Nós" class="img-responsive">
-      </div>
-      <div class="col-md-6 fade-in">
-        <h2>Sobre Nós</h2>
-        <p>Trabalhamos para oferecer o melhor design minimalista e responsivo. Nosso foco é em qualidade e simplicidade.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- Seção Contato -->
-<section id="contato" class="section">
-  <div class="container text-center fade-in">
-    <h2>Contato</h2>
-    <p>Entre em contato conosco para mais informações.</p>
-    <a href="#inicio" class="btn btn-custom">Voltar ao Início</a>
-  </div>
-</section>
+    <!-- Sobre Section -->
+    <section id="sobre" class="bg-dark text-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Sobre Nós</h2>
+            <p class="text-center">
+                Na ARES BARBERSHOP, cada corte é uma obra de arte, e cada cliente é tratado como um verdadeiro guerreiro. Inspirados pelo poder e pela força de Ares, o deus da guerra, trazemos para você uma experiência única, onde tradição e estilo se encontram para criar uma nova versão de você. <br>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="scripts.js"></script>
+                Nossa missão é transformar cada cliente, proporcionando não apenas um corte, mas uma verdadeira metamorfose. Aqui, o seu estilo é nossa batalha, e a vitória é sempre um visual impecável, que reflete confiança, atitude e poder. <br>
+                
+                Com profissionais altamente qualificados, dedicados ao mais alto padrão de excelência, nossa barbearia é o lugar onde você encontra mais do que um simples corte de cabelo – você encontra uma experiência que te faz sentir-se no topo, pronto para dominar qualquer desafio. <br>
+                
+                Na <strong>ARES BARBERSHOP</strong>, o compromisso com a qualidade, o respeito pelo cliente e a busca incessante pela perfeição são as armas que nos tornam imbatíveis. Sente-se no trono, escolha o estilo que mais combina com seu poder e deixe-nos fazer o resto. Afinal, um guerreiro merece o melhor corte <br>
+            </p>
+        </div>
+    </section>
 
+       <!-- Produtos Section -->
+       <section id="barbeiros" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nossos Barbeiros</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/rafael-lima.jpg" class="card-img-top" alt="Barbeiro 1">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Rafael Lima</strong></h5>
+                            <p class="card-text">Dono e mentor da ARES BARBERSHOP, Rafa é de São Paulo e traz mais de 10 anos de experiência. Sua paixão por cortes perfeitos e atenção aos detalhes fazem dele a alma da barbearia.</p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/gustavo-pereira.jpg" class="card-img-top" alt="Barbeiro 2">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Gustavo Pereira</strong></h5>
+                            <p class="card-text">Natural de Salvador, Gustavo tem 6 anos de experiência e é especializado em criar cortes que mesclam modernidade e tradição, sempre com foco no bem-estar do cliente.</p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/lucas-costa.jpg" class="card-img-top" alt="Barbeiro 3">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Lucas Costa</strong></h5>
+                            <p class="card-text">Carioca de Rio de Janeiro, Lucas é um barbeiro criativo com 5 anos de experiência, conhecido por seu estilo irreverente e ousado, criando cortes únicos e personalizados para cada cliente.</p>
+                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Entre em Contato</h2>
+            <form action="https://formsubmit.co/contact.iannlucas@gmail.com" method="POST" class="formulario">
+                <form action="#" method="POST" class="formulario">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                  
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                  
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+
+                    <input type="hidden" name="_template" value="table">
+                    <button class="btn" type="submit">Enviar</button>
+                  </form>
+                  
+               
+           </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 <strong>Ares BarberShop</strong>. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
