@@ -1,5 +1,6 @@
 // script.js
 
+// NAVBAR
 
 document.addEventListener('DOMContentLoaded', () => {
     // Navbar toggler animation
@@ -27,3 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+

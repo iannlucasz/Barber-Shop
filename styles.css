@@ -62,19 +62,83 @@ navbar {
     font-family: var(--fonte05);
 }
 
+/* Estilo básico para o carrossel */
+#carrossel {
+  background-color: #767676; /* Cor de fundo suave para o carrossel */
+  padding: 60px 0;
+}
+
+/* Título do carrossel */
+#carrossel h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Imagens do carrossel */
+#card-carrossel .carousel-item img {
+  width: 100%; /* Garante que a imagem ocupe 100% do container */
+  height: 500px; /* Altura fixa para as imagens */
+  object-fit: cover; /* Garante que a imagem cubra completamente a área */
+  border-radius: 10px; /* Bordas arredondadas */
+  transition: transform 0.5s ease; /* Transição suave ao passar o mouse */
+}
+
+/* Efeito de hover nas imagens */
+#card-carrossel .carousel-item img:hover {
+  transform: scale(1.05); /* Aumenta a imagem suavemente ao passar o mouse */
+}
+
+/* Estilos dos controles de navegação (anterior e próximo) */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: black; /* Cor dos ícones de navegação */
+  border-radius: 50%; /* Ícones redondos */
+}
+
+/* Ajustes para a responsividade */
+@media (max-width: 768px) {
+  /* Tamanho do título em telas menores */
+  #carrossel h2 {
+      font-size: 1.8rem;
+  }
+
+  /* Ajusta a altura da imagem para telas pequenas */
+  #card-carrossel .carousel-item img {
+      height: 300px; /* Menor altura para imagens em telas menores */
+  }
+}
+
+
+
+
 a.nav-link:hover {
     color: #0056b3;
     transform: translateX(5px);
     transition: transform 0.5s linear;
 }
 
-h5 {
+#barbeiros {
+  background-color: rgb(69, 67, 67);
+  
+}
+
+h2#barbeiros {
+  color: rgb(255, 204, 0);
+  font-family: var(--fonte01);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.616);
+  margin-bottom: 15px;
+}
+
+h5#barbeiros {
     font-family: var(--fonte01);
+
+    
 }
 
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: rgb(216, 211, 211);
+    border-color: rgb(255, 204, 0);
     
 }
 
@@ -108,8 +172,7 @@ p{
 
 #contato {
     background-color: #343a40;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
+ 
 
 }
 
